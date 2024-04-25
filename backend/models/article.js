@@ -12,5 +12,5 @@ var ArtcleSchema = Schema({
 
 });
 
-module.export = mongoose.nodel('Article', ArtcleSchema);
+module.export = mongoose.model('Article', ArtcleSchema);
 // crea una colecion articles y guarda documentos de este tipo y conesta eestrcutura dentro de la coleccion

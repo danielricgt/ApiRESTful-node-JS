@@ -25,7 +25,7 @@ app.use(bodyParser.json());
 
 //Anadir prefijos a rutas / cargar rutas
 
-app.use('/', article_routes);
+app.use('/api', article_routes);
 
 // Ruta o medoto de prueba para el API REST
 
