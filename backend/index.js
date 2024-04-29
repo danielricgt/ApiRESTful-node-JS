@@ -7,8 +7,8 @@ var port = 3000;
 
 
 mongoose.Promise = global.Promise;
-
-mongoose.connect('mongodb+srv://daniel2024:daniel2024@cluster0.nh3mih2.mongodb.net/')
+mongoose.set('strictQuery', false);
+mongoose.connect('mongodb://127.0.0.1:27017/pruebas1')
 .then(()=> {
     console.log('conexion realizada exitosamente a la BD');
     // crear servidor y ponerme a escuchar peticiones http

@@ -3,7 +3,7 @@
 var mongoose = require ('mongoose');
 var Schema = mongoose.Schema;
 
-var ArtcleSchema = Schema({
+var ArticleSchema = Schema({
 
     title: String,
     content: String,
@@ -12,5 +12,5 @@ var ArtcleSchema = Schema({
 
 });
 
-module.export = mongoose.model('Article', ArtcleSchema);
-// crea una colecion articles y guarda documentos de este tipo y conesta eestrcutura dentro de la coleccion
+module.exports = mongoose.model('Article', ArticleSchema);
+// articles --> crea una colecion articles y guarda documentos de este tipo y conesta eestrcutura dentro de la coleccion
